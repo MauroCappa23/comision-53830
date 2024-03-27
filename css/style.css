@@ -67,6 +67,11 @@ h1{
     font-weight: bold;
 }
 
+.barra li a:hover{
+    color: bisque;
+    text-transform: uppercase;
+}
+
 .barra li{
     list-style: none;
 }
@@ -77,6 +82,11 @@ h1{
 
 .form{
     width: 200px;
+}
+
+input:focus{
+    color: #F0F3FF;
+    background-color: #211951;
 }
 
 .iniciosesion{
@@ -232,6 +242,7 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .consoles div img{
