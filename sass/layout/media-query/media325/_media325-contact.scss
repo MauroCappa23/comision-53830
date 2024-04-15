@@ -1,5 +1,6 @@
 @media (max-width: 426px){
     .main-contact{
-        @include flex(column, center, none, .9375rem)
+        @include flex(column, center, none, .9375rem);
+        border-left: .9375rem;
 }
 }

@@ -29,10 +29,21 @@
                         text-decoration: none;
                         color: map-get($colores, color2);
                         font-size: 30px;
+                        &:hover{
+                            color: bisque;
+                            text-transform: uppercase;
+                        }
                     }
                 }
             }
         }
+}
+.header1{
+    &:nth-child(1){
+        a{
+            text-decoration: none;
+        }
+    }
 }
 .iniciosesion{
     p{
