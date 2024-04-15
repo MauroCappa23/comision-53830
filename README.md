@@ -1,19 +1,24 @@
 # GameAddict
 
-> Este proyecto es sobre una pagina de videojuegos. Tome como guia la pagina GAMESTOP y fui haciendo algunas cosas similares. Para esta segunda pre-entrega le fui agregando mas cosas pero quiero ir trabajandola aun mas.
+> Este proyecto es sobre una pagina de videojuegos. Tome como guia la pagina GAMESTOP y fui haciendo algunas cosas similares.
 
 ## Tecnologias Aplicadas
 - HTML
 - CSS
 - Git
 - GitHub
+- Sass
+- Seo
 
 ## Responsive
-> Aplique full responsive al index.html y a preowned. En las demas lo agregue solo hasta la vista de tablet.
+> Aplique full responsive a todas las paginas.
 
 ## Flexbox y Grids
 > Aplique flexbox al header y al footer y en el main utilice grids.
 
 ## Pseudoclase
-> Se la agregue a la barra de navegacion y al formulario del header.
+> Se la agregue a la barra de navegacion.
+
+## Nota
+> No agregue bootstrap en esta entrega para que no me modificara nada, en la ultima si pienso agregar algo.
 
