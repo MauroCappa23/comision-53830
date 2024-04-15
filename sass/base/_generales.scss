@@ -1,0 +1,23 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main{
+    width: 100vw;
+    @include flex(column, center, none, 3.125rem);
+}
+
+.imagen{
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+footer{
+    width: 100vw;
+    font-optical-sizing: auto;
+    background-color: #15F5BA;
+    margin-top: 100px;
+    @include flex(row, space-around, none, none)
+}

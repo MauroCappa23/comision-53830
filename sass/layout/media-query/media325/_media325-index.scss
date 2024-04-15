@@ -1,0 +1,46 @@
+@media (max-width:625px){
+    .imagen-fondo{
+        width: 100vw;
+    }
+    
+    .section-juegos1 {
+        @include flex(column, center, none, none)
+    }
+
+    .section-juegos2 {
+        @include flex(column, center, none, none)
+    }
+    .header1{
+        .form{
+            display: none;
+        }
+        .menu h1{
+            font-size: 1.5625rem;
+        }
+        .iniciosesion p{
+            display: none;
+        }
+    }
+    .header2{
+        .barra{
+            @include flex(column, none, center, none)
+        }
+    }
+    .footer{
+        justify-content: space-around;
+        h3{
+            font-size: 1rem;
+        }
+        .ul-footer li{
+            font-size: .875rem;
+        }
+    }
+    footer{
+        margin-top: 3.125rem;
+        @include flex(column, none, none, .9375rem)
+    }
+    .logos{
+        align-self: center;
+    }
+
+}

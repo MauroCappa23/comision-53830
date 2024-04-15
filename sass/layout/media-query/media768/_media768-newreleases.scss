@@ -1,0 +1,26 @@
+@media (max-width: 990px){
+    .header1 .menu h1{
+        font-size: 1.875rem;
+    }
+
+    .barra li a{
+        font-size: 1.25rem;
+    }
+    .ps5{
+        width: 100vw;
+        @include grids(15%, repeat(2, 1fr), none, none, ". ps5div1 ." ". ps5div2 ps5div3" ". ps5div4 ps5div5");
+    }
+
+    .xbox{
+        width: 100vw;
+        @include grids(15%, repeat(2, 1fr), none, none,  ". xboxdiv1 ." ". xboxdiv2 xboxdiv3" ". xboxdiv4 xboxdiv5");
+    }
+
+    .switch{
+        width: 100%;
+        @include grids(15%, repeat(2, 1fr), none, none, ". switchdiv1 ." ". switchdiv2 switchdiv3" ". switchdiv4 switchdiv5");
+    }
+    .footer{
+        @include flex(row, none, none, .9375rem);
+    }
+}

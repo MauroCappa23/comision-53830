@@ -1,0 +1,20 @@
+@media (max-width: 990px){
+    .header1 .menu h1{
+        font-size: 30px;
+    }
+
+    .barra li a{
+        font-size: 20px;
+    }
+    .img-consoles{
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .consoles2{
+        margin-top: 1.25rem;
+        margin-left: 0;
+        width: 100vw;
+        @include grids(repeat(2, 1fr), repeat(5, 1fr), center, none, "consoles-1 consoles-2" "consoles-3 consoles-4" "consoles-5 consoles-6" "consoles-7 consoles-8" "consoles-9 consoles-10");
+    }
+}

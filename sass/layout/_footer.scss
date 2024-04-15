@@ -1,0 +1,17 @@
+.footer{
+    @include flex(row, none, none, 6.25rem);
+    padding: 1.875rem;
+    ul{
+        li{
+            list-style: none;
+        }
+    }
+}
+
+.logos{
+    align-self: center;
+    button{
+    border: 3px solid whitesmoke;
+    border-radius: .3125rem;
+    }
+}

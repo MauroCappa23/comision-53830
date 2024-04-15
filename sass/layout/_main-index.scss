@@ -1,0 +1,56 @@
+.imagen-fondo{
+    background-image: url(https://articles-img.sftcdn.net/image/upload/v1582492843/videojuegos_4_tomb_raider_psh48b.jpg);
+    width: 100vw;
+    height: 300px;
+    background-position: center center;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.section-juegos1{
+    @include grids(repeat(5, 1fr), repeat(3, 1fr), center, center, "titulojuegos1 titulojuegos1 . . ." "juegos1-div1 juegos1-div2 juegos1-div3 juegos1-div4 juegos1-div5" "juegos1-div1 juegos1-div2 juegos1-div3 juegos1-div4 juegos1-div5")
+}
+.juegos1-div1{
+    grid-area: juegos1-div1;
+}
+
+.juegos1-div2{
+    grid-area: juegos1-div2;
+}
+
+.juegos1-div3{
+    grid-area: juegos1-div3;
+}
+
+.juegos1-div4{
+    grid-area: juegos1-div4;
+}
+
+.juegos1-div5{
+    grid-area: juegos1-div5;
+}
+
+.section-juegos2{
+    @include grids(repeat(5, 1fr), repeat(3, 1fr), center, center, "titulojuegos2 titulojuegos2 . . ." "juegos2-div1 juegos2-div2 juegos2-div3 juegos2-div4 juegos2-div5" "juegos2-div1 juegos2-div2 juegos2-div3 juegos2-div4 juegos2-div5")
+}
+.juegos2-div1{
+    grid-area: juegos2-div1;
+}
+
+.juegos2-div2{
+    grid-area: juegos2-div2;
+}
+
+.juegos2-div3{
+    grid-area: juegos2-div3;
+}
+
+.juegos2-div4{
+    grid-area: juegos2-div4;
+}
+
+.juegos2-div5{
+    grid-area: juegos2-div5;
+}

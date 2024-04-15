@@ -1,0 +1,46 @@
+.consoles{
+    width: 100%;
+    @include flex(row, space-around, center, none);
+    flex-wrap: wrap;
+    margin-top: 1.5625rem;
+}
+.img-consoles{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+.consoles2{
+    @include grids(repeat(3, 1fr), (10%, repeat(3, 1fr)), none, center, ". consoles-1 ." "consoles-2 consoles-3 consoles-4" "consoles-5 consoles-6 consoles-7" "consoles-8 consoles-9 consoles-10");
+    gap: 1.25rem;
+}
+.consoles-1{
+    grid-area: consoles-1;
+}
+.consoles-2{
+    grid-area: consoles-2;
+}
+.consoles-3{
+    grid-area: consoles-3;
+}
+.consoles-4{
+    grid-area: consoles-4;
+}
+.consoles-5{
+    grid-area: consoles-5;
+}
+.consoles-6{
+    grid-area: consoles-6;
+}
+.consoles-7{
+    grid-area: consoles-7;
+}
+.consoles-8{
+    grid-area: consoles-8;
+}
+.consoles-9{
+    grid-area: consoles-9;
+}
+.consoles-10{
+    grid-area: consoles-10;
+}

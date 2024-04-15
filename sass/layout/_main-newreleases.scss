@@ -1,0 +1,63 @@
+.main-newreleases{
+    margin-top: 1.25rem;
+    margin-left: .625rem;
+}
+.ps5{
+    width: 100vw;
+    @include grids(repeat(3, 1fr), repeat(2,1fr), none, none, "ps5div1 ps5div2 ps5div3" ". ps5div4 ps5div5")
+}
+.ps5div1{
+    grid-area: ps5div1;
+}
+.ps5div2{
+    grid-area: ps5div2;
+}
+.ps5div3{
+    grid-area: ps5div3;
+}
+.ps5div4{
+    grid-area: ps5div4;
+}
+.ps5div5{
+    grid-area: ps5div5;
+}
+
+.xbox{
+    width: 100vw;
+    @include grids(repeat(3, 1fr), repeat(2, 1fr), none, none, "xboxdiv1 xboxdiv2 xboxdiv3" ". xboxdiv4 xboxdiv5")
+}
+.xboxdiv1{
+    grid-area: xboxdiv1;
+}
+.xboxdiv2{
+    grid-area: xboxdiv2;
+}
+.xboxdiv3{
+    grid-area: xboxdiv3;
+}
+.xboxdiv4{
+    grid-area: xboxdiv4;
+}
+.xboxdiv5{
+    grid-area: xboxdiv5;
+}
+
+.switch{
+    width: 100vw;
+    @include grids(repeat(3, 1fr), repeat(2, 1fr), none, none, "switchdiv1 switchdiv2 switchdiv3" ". switchdiv4 switchdiv5")
+}
+.switchdiv1{
+    grid-area: switchdiv1;
+}
+.switchdiv2{
+    grid-area: switchdiv2;
+}
+.switchdiv3{
+    grid-area: switchdiv3;
+}
+.switchdiv4{
+    grid-area: switchdiv4;
+}
+.switchdiv5{
+    grid-area: switchdiv5;
+}

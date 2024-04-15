@@ -1,0 +1,12 @@
+.fondocontactus{
+    background-image: url(https://sm.ign.com/t/ign_latam/video/1/15-best-se/15-best-selling-video-games-of-all-time_bnj1.1200.jpg);
+    width: 100vw;
+    height: 300px;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.main-contact{
+    margin-top: 30px;
+    width: 100vw;
+    @include flex(row, none, none, 1.25rem)
+}

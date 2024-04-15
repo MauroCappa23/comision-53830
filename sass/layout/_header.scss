@@ -1,0 +1,41 @@
+.header-index {
+    background-color: map-get($colores, color1);
+    width: 100vw;
+    padding: 1.25rem;
+    @include flex(column, none, none, 2.5rem);
+        h1 {
+            color: map-get($colores, color2);
+            font-size: 50px;
+        }
+        section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        nav{
+            ul{
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: map-get($colores, color2);
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+}
+.iniciosesion{
+    p{
+        color: map-get($colores, color2);
+    }
+}

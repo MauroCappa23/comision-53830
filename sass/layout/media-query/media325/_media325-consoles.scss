@@ -1,0 +1,5 @@
+@media (max-width:425px){
+    .consoles2{
+        @include flex(column, center, none, .625rem)
+    }
+}    

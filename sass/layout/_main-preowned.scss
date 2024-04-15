@@ -1,0 +1,29 @@
+.section-preowned{
+    margin-top: 1.25rem;
+    width: 100%;
+    @include grids(repeat(4, 1fr), repeat(3, 1fr), none, center, "preowned1 preowned2 preowned3 preowned4" ". . . ." "preowned5 preowned6 preowned7 preowned8")
+}
+.preowned1{
+    grid-area: preowned1;
+}
+.preowned2{
+    grid-area: preowned2;
+}
+.preowned3{
+    grid-area: preowned3;
+}
+.preowned4{
+    grid-area: preowned4;
+}
+.preowned5{
+    grid-area: preowned5;
+}
+.preowned6{
+    grid-area: preowned6;
+}
+.preowned7{
+    grid-area: preowned7;
+}
+.preowned8{
+    grid-area: preowned8;
+}

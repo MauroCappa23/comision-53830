@@ -1,0 +1,5 @@
+@media (max-width: 600px){
+    .section-preowned{
+        @include flex(column, center, none, .9375rem)
+    }
+}
