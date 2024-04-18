@@ -1,33 +1,27 @@
 @media (max-width: 990px){
-    .header1 .menu h1{
-        font-size: 30px;
+    .header1{
+        h1{
+            font-size: 1.25rem;
+        }
+        }
+    .barra{
+        @include flex(column, center, none, none)
     }
-
     .barra li a{
-        font-size: 20px;
+        font-size: 1.125rem;
     }
 
     .section-juegos1 {
-        display: grid;
+        @include grids(repeat(3, 1fr), (20%, repeat(2,1fr)), none , none, ". titulojuegos1 ." "juegos1-div1 juegos1-div2 juegos1-div3" ". juegos1-div4 juegos1-div5");
         width: 100%;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 20% repeat(2, 1fr);
-        grid-template-areas:
-            ". titulojuegos1 ."
-            "juegos1-div1 juegos1-div2 juegos1-div3"
-            ". juegos1-div4 juegos1-div5"
-        ;
     }
 
     .section-juegos2{
+        @include grids(repeat(3, 1fr), (20%, repeat(2,1fr)), none , none, ". titulojuegos2 ." "juegos2-div1 juegos2-div2 juegos2-div3" ". juegos2-div4 juegos2-div5");
             display: grid;
             width: 100%;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 20% repeat(2, 1fr);
-            grid-template-areas:
-            ". titulojuegos2 ."
-            "juegos2-div1 juegos2-div2 juegos2-div3"
-            ". juegos2-div4 juegos2-div5"
-            ;
         }
+}
+.footer{
+    @include flex(column, none, none, none)
 }

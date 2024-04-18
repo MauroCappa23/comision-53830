@@ -1,4 +1,13 @@
 @media (max-width: 600px){
+    .header1 h1{
+        font-size: 1.25rem;
+    }
+    .barra li a{
+        font-size: .9375rem;
+    }
+    .barra{
+        @include flex(column, center, none, none)
+    }
     .section-preowned{
         @include flex(column, center, none, .9375rem)
     }

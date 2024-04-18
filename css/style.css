@@ -76,7 +76,7 @@ footer {
 .imagen-fondo {
   background-image: url(https://articles-img.sftcdn.net/image/upload/v1582492843/videojuegos_4_tomb_raider_psh48b.jpg);
   width: 100vw;
-  height: 300px;
+  height: 18.75rem;
   background-position: center center;
   background-size: 100% 100%;
   display: flex;
@@ -327,22 +327,40 @@ footer {
   gap: 1.25rem; }
 
 @media (max-width: 990px) {
-  .header1 .menu h1 {
-    font-size: 30px; }
+  .header1 h1 {
+    font-size: 1.25rem; }
+  .barra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+    gap: none; }
   .barra li a {
-    font-size: 20px; }
+    font-size: 1.125rem; }
   .section-juegos1 {
     display: grid;
-    width: 100%;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 20% repeat(2, 1fr);
-    grid-template-areas: ". titulojuegos1 ." "juegos1-div1 juegos1-div2 juegos1-div3" ". juegos1-div4 juegos1-div5"; }
+    grid-template-rows: 20%, repeat(2, 1fr);
+    justify-content: none;
+    place-items: none;
+    grid-template-areas: ". titulojuegos1 ." "juegos1-div1 juegos1-div2 juegos1-div3" ". juegos1-div4 juegos1-div5";
+    width: 100%; }
   .section-juegos2 {
     display: grid;
-    width: 100%;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 20% repeat(2, 1fr);
-    grid-template-areas: ". titulojuegos2 ." "juegos2-div1 juegos2-div2 juegos2-div3" ". juegos2-div4 juegos2-div5"; } }
+    grid-template-rows: 20%, repeat(2, 1fr);
+    justify-content: none;
+    place-items: none;
+    grid-template-areas: ". titulojuegos2 ." "juegos2-div1 juegos2-div2 juegos2-div3" ". juegos2-div4 juegos2-div5";
+    display: grid;
+    width: 100%; } }
+
+.footer, footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: none; }
 
 @media (max-width: 990px) {
   .header1 .menu h1 {
@@ -406,9 +424,9 @@ footer {
 
 @media (max-width: 990px) {
   .header1 .menu h1 {
-    font-size: 30px; }
+    font-size: 1.25rem; }
   .barra li a {
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .img-consoles {
     width: 7.5rem;
     height: 7.5rem; }
@@ -423,13 +441,13 @@ footer {
     place-items: none;
     grid-template-areas: "consoles-1 consoles-2" "consoles-3 consoles-4" "consoles-5 consoles-6" "consoles-7 consoles-8" "consoles-9 consoles-10"; } }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .header1 .menu h1 {
-    font-size: 30px; }
+    font-size: 1.25rem; }
   .barra li a {
-    font-size: 20px; } }
+    font-size: 1.25rem; } }
 
-@media (max-width: 625px) {
+@media (max-width: 600px) {
   .imagen-fondo {
     width: 100vw; }
   .section-juegos1 {
@@ -446,41 +464,64 @@ footer {
     gap: none; }
   .header1 .form {
     display: none; }
-  .header1 .menu h1 {
-    font-size: 1.5625rem; }
   .header1 .iniciosesion p {
     display: none; }
-  .header2 .barra {
+  .header1:nth-child(1) h1 {
+    font-size: 1.375rem; }
+  .barra {
     display: flex;
     flex-direction: column;
-    justify-content: none;
-    align-items: center;
+    justify-content: center;
+    align-items: none;
     gap: none; }
+  .header1 h1 {
+    font-size: 1.25rem; }
+  .barra li a {
+    font-size: .9375rem; }
   .footer, footer {
     justify-content: space-around; }
     .footer h3, footer h3 {
       font-size: 1rem; }
-    .footer .ul-footer li, footer .ul-footer li {
-      font-size: .875rem; }
-  footer {
-    margin-top: 3.125rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: none;
-    align-items: none;
-    gap: 0.9375rem; }
+    .footer li, footer li {
+      font-size: .75rem; }
   .logos, footer {
     align-self: center; } }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
+  .header1 h1 {
+    font-size: 1.25rem; }
+  .barra li a {
+    font-size: .9375rem; }
   .consoles2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: none;
-    gap: 0.625rem; } }
+    gap: 0.625rem; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: none;
+    gap: 0.9375rem; }
+  .barra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+    gap: none; } }
 
-@media (max-width: 625px) {
+@media (max-width: 600px) {
+  .header1 h1 {
+    font-size: 1.25rem; }
+  .barra li a {
+    font-size: .9375rem; }
+  .barra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+    gap: none; }
   .ps5 {
     display: flex;
     flex-direction: column;
@@ -501,6 +542,16 @@ footer {
     gap: 0.9375rem; } }
 
 @media (max-width: 600px) {
+  .header1 h1 {
+    font-size: 1.25rem; }
+  .barra li a {
+    font-size: .9375rem; }
+  .barra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+    gap: none; }
   .section-preowned {
     display: flex;
     flex-direction: column;
@@ -508,7 +559,11 @@ footer {
     align-items: none;
     gap: 0.9375rem; } }
 
-@media (max-width: 426px) {
+@media (max-width: 600px) {
+  .header1 h1 {
+    font-size: 1.25rem; }
+  .barra li a {
+    font-size: .9375rem; }
   .main-contact {
     display: flex;
     flex-direction: column;

@@ -1,8 +1,8 @@
-@media (max-width:625px){
-    .imagen-fondo{
+@media (max-width:600px) {
+    .imagen-fondo {
         width: 100vw;
     }
-    
+
     .section-juegos1 {
         @include flex(column, center, none, none)
     }
@@ -10,36 +10,47 @@
     .section-juegos2 {
         @include flex(column, center, none, none)
     }
-    .header1{
-        .form{
+
+    .header1 {
+        .form {
             display: none;
         }
-        .menu h1{
-            font-size: 1.5625rem;
-        }
-        .iniciosesion p{
+
+        .iniciosesion p {
             display: none;
         }
     }
-    .header2{
-        .barra{
-            @include flex(column, none, center, none)
+
+    .header1 {
+        &:nth-child(1) {
+            h1 {
+                font-size: 1.375rem;
+            }
         }
     }
-    .footer{
+    .barra{
+        @include flex(column, center, none, none)
+    }
+    .header1 h1{
+        font-size: 1.25rem;
+    }
+    .barra li a{
+        font-size: .9375rem;
+    }
+
+    .footer {
         justify-content: space-around;
-        h3{
+
+        h3 {
             font-size: 1rem;
         }
-        .ul-footer li{
-            font-size: .875rem;
+
+        li {
+            font-size: .75rem;
         }
     }
-    footer{
-        margin-top: 3.125rem;
-        @include flex(column, none, none, .9375rem)
-    }
-    .logos{
+
+    .logos {
         align-self: center;
     }
 
