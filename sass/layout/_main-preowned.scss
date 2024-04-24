@@ -27,3 +27,9 @@
 .preowned8{
     grid-area: preowned8;
 }
+.giftcard{
+    background-color: bisque;
+    @include flex(row, center, center, .625rem);
+    font-weight: bolder;
+    font-size: x-large;
+}

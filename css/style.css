@@ -234,6 +234,16 @@ footer {
 .preowned8 {
   grid-area: preowned8; }
 
+.giftcard {
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  font-weight: bolder;
+  font-size: x-large; }
+
 /**.main-newreleases{
     margin-top: 1.25rem;
     margin-left: .625rem;
@@ -331,9 +341,26 @@ footer {
   width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: none;
+  justify-content: space-around;
   align-items: none;
-  gap: 1.25rem; }
+  gap: none; }
+
+.gameover {
+  width: 18.75rem;
+  height: 18.75rem;
+  border-radius: .3125rem; }
+
+.gameroom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  font-weight: bolder;
+  font-size: larger; }
+
+.parrafocontact {
+  align-self: center; }
 
 @media (max-width: 990px) {
   /**General**/
