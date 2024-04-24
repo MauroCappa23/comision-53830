@@ -1,4 +1,60 @@
 @media (max-width:600px) {
+    /**Generales**/
+    .header1 {
+        .form {
+            display: none;
+        }
+
+        .iniciosesion p {
+            display: none;
+        }
+
+        h1{
+            font-size: 1.25rem;
+        }
+    }
+
+    .barra{
+        @include flex(column, center, none, none)
+    }
+
+    .barra li a{
+        font-size: 1.125rem;
+    }
+
+    .footer {
+        @include flex(column, none, center, .625rem);
+        h3 {
+            font-size: 1rem;
+        }
+
+        li {
+            font-size: .75rem;
+        }
+    }
+    .logos {
+        align-self: center;
+    }
+    .consoles{
+        @include grids(repeat(2, 1fr), repeat(2, 1fr), none, center, "grid-consoles1 grid-consoles2" "grid-consoles3 grid-consoles4");
+    }
+    .grid-consoles1{
+        grid-template-areas: grid-consoles1;
+    }
+    .grid-consoles2{
+        grid-template-areas: grid-consoles2;
+    }
+    .grid-consoles3{
+        grid-template-areas: grid-consoles3;
+    }
+    .grid-consoles4{
+        grid-template-areas: grid-consoles4;
+    }
+    .img-consoles{
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+    /**Index**/
     .imagen-fondo {
         width: 100vw;
     }
@@ -11,47 +67,33 @@
         @include flex(column, center, none, none)
     }
 
-    .header1 {
-        .form {
-            display: none;
-        }
-
-        .iniciosesion p {
-            display: none;
-        }
+    /**contact**/
+    .main-contact{
+        @include flex(column, center, none, .9375rem);
+        border-left: .9375rem;
+    }
+    /**New Releases**/
+    .ps5{
+        @include flex(column, center, center, .9375rem) 
     }
 
-    .header1 {
-        &:nth-child(1) {
-            h1 {
-                font-size: 1.375rem;
-            }
-        }
-    }
-    .barra{
-        @include flex(column, center, none, none)
-    }
-    .header1 h1{
-        font-size: 1.25rem;
-    }
-    .barra li a{
-        font-size: .9375rem;
+    .xbox{
+        @include flex(column, center, center, .9375rem)
     }
 
-    .footer {
-        justify-content: space-around;
-
-        h3 {
-            font-size: 1rem;
-        }
-
-        li {
-            font-size: .75rem;
-        }
+    .switch{
+        @include flex(column, center, center, .9375rem) 
     }
 
-    .logos {
-        align-self: center;
+    .texto{
+        font-size: 1rem;
     }
-
+    //*Pre-owned**/
+    .section-preowned{
+        @include flex(column, center, none, .9375rem)
+    }
+    /**Consoles**/
+    .consoles2{
+        @include flex(column, center, none, .625rem)
+    }
 }

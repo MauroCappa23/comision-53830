@@ -1,0 +1,65 @@
+@media (max-width: 990px) {
+
+    /**General**/
+    .header1 {
+        h1 {
+            font-size: 1.5625rem;
+        }
+    }
+
+    .barra {
+        @include flex(row, center, none, none)
+    }
+
+    .barra li a {
+        font-size: 1.25rem;
+    }
+
+    .footer {
+        @include flex(row, none, none, none);
+    }
+
+    /**Index**/
+    .section-juegos1 {
+        @include grids(repeat(3, 1fr), (20%, repeat(2, 1fr)), none, none, ". titulojuegos1 ." "juegos1-div1 juegos1-div2 juegos1-div3" ". juegos1-div4 juegos1-div5");
+        width: 100%;
+    }
+
+    .section-juegos2 {
+        @include grids(repeat(3, 1fr), (20%, repeat(2, 1fr)), none, none, ". titulojuegos2 ." "juegos2-div1 juegos2-div2 juegos2-div3" ". juegos2-div4 juegos2-div5");
+        display: grid;
+        width: 100%;
+    }
+
+    /**Consoles**/
+    .consoles2 {
+        margin-top: 1.25rem;
+        margin-left: 0;
+        width: 100vw;
+        @include grids(repeat(2, 1fr), repeat(5, 1fr), center, none, "consoles-1 consoles-2" "consoles-3 consoles-4" "consoles-5 consoles-6" "consoles-7 consoles-8" "consoles-9 consoles-10");
+    }
+
+    /**New Releases**/
+    .ps5 {
+        width: 100vw;
+        @include grids(15%, repeat(2, 1fr), none, none, ". ps5div1 ." ". ps5div2 ps5div3" ". ps5div4 ps5div5");
+    }
+
+    .xbox {
+        width: 100vw;
+        @include grids(15%, repeat(2, 1fr), none, none, ". xboxdiv1 ." ". xboxdiv2 xboxdiv3" ". xboxdiv4 xboxdiv5");
+    }
+
+    .switch {
+        width: 100%;
+        @include grids(15%, repeat(2, 1fr), none, none, ". switchdiv1 ." ". switchdiv2 switchdiv3" ". switchdiv4 switchdiv5");
+    }
+
+    /**Pre-owned**/
+    .section-preowned {
+        @include grids(repeat(3, 1fr), repeat(3, 1fr), none, center, "preowned1 preowned2 preowned3" "preowned4 preowned5 preowned6" "preowned7 . preowned8");
+        width: 100vw;
+        row-gap: .9375rem;
+    }
+
+}
