@@ -4,9 +4,7 @@
     height: 18.75rem;
     background-position: center center;
     background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    @include flex(column, flex-end, none, none)
 }
 
 .section-juegos1{

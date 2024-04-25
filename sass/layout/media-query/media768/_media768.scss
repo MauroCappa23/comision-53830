@@ -15,8 +15,20 @@
         font-size: 1.25rem;
     }
 
+    footer{
+        @include flex(column, center, none, .625rem);
+        margin-bottom: 0;
+    }
+
     .footer {
-        @include flex(row, none, none, none);
+        padding: 0;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+        @include flex(row, center, center, none);
+        flex-wrap: wrap;
+        ul{
+            padding-left: 0
+        }
     }
 
     /**Index**/
@@ -29,6 +41,9 @@
         @include grids(repeat(3, 1fr), (20%, repeat(2, 1fr)), none, none, ". titulojuegos2 ." "juegos2-div1 juegos2-div2 juegos2-div3" ". juegos2-div4 juegos2-div5");
         display: grid;
         width: 100%;
+    }
+    .logos{
+        @include flex(row, center, none, none)
     }
 
     /**Consoles**/

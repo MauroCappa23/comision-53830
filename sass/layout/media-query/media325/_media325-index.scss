@@ -15,17 +15,24 @@
     }
 
     .barra{
-        @include flex(column, center, none, none)
+        @include flex(column, center, none, none);
+        ul{
+            padding-left: 0;
+        }
     }
 
     .barra li a{
         font-size: 1.125rem;
     }
-
+    footer{
+        margin-bottom: 0;
+        margin-top: 0
+    }
     .footer {
         @include flex(column, none, center, .625rem);
         h3 {
             font-size: 1rem;
+            font-weight: bolder;
         }
 
         li {
@@ -72,6 +79,13 @@
         @include flex(column, center, none, .9375rem);
         border-left: .9375rem;
     }
+    .parrafocontact{
+        ul{
+            li{
+                font-size: small;
+            }
+        }
+    }
     /**New Releases**/
     .ps5{
         @include flex(column, center, center, .9375rem) 
@@ -91,6 +105,13 @@
     //*Pre-owned**/
     .section-preowned{
         @include flex(column, center, none, .9375rem)
+    }
+    .giftcard{
+        @include flex(column, center, center, none);
+        font-size: small;
+        img{
+            width: 100%;
+        }
     }
     /**Consoles**/
     .consoles2{

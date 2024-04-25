@@ -81,7 +81,9 @@ footer {
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  align-items: none;
+  gap: none; }
 
 .section-juegos1 {
   display: grid;
@@ -140,7 +142,8 @@ footer {
     list-style: none; }
 
 .logos, footer {
-  align-self: center; }
+  align-self: center;
+  gap: .3125rem; }
   .logos button, footer button {
     border: 3px solid whitesmoke;
     border-radius: .3125rem; }
@@ -243,6 +246,9 @@ footer {
   gap: 0.625rem;
   font-weight: bolder;
   font-size: x-large; }
+
+footer {
+  margin-top: 0; }
 
 /**.main-newreleases{
     margin-top: 1.25rem;
@@ -374,12 +380,25 @@ footer {
     gap: none; }
   .barra li a {
     font-size: 1.25rem; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+    gap: 0.625rem;
+    margin-bottom: 0; }
   .footer, footer {
+    padding: 0;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
     display: flex;
     flex-direction: row;
-    justify-content: none;
-    align-items: none;
-    gap: none; }
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    flex-wrap: wrap; }
+    .footer ul, footer ul {
+      padding-left: 0; }
   /**Index**/
   .section-juegos1 {
     display: grid;
@@ -398,6 +417,12 @@ footer {
     grid-template-areas: ". titulojuegos2 ." "juegos2-div1 juegos2-div2 juegos2-div3" ". juegos2-div4 juegos2-div5";
     display: grid;
     width: 100%; }
+  .logos, footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: none;
+    gap: none; }
   /**Consoles**/
   .consoles2 {
     margin-top: 1.25rem;
@@ -459,8 +484,13 @@ footer {
     justify-content: center;
     align-items: none;
     gap: none; }
+    .barra ul {
+      padding-left: 0; }
   .barra li a {
     font-size: 1.125rem; }
+  footer {
+    margin-bottom: 0;
+    margin-top: 0; }
   .footer, footer {
     display: flex;
     flex-direction: column;
@@ -468,7 +498,8 @@ footer {
     align-items: center;
     gap: 0.625rem; }
     .footer h3, footer h3 {
-      font-size: 1rem; }
+      font-size: 1rem;
+      font-weight: bolder; }
     .footer li, footer li {
       font-size: .75rem; }
   .logos, footer {
@@ -514,6 +545,8 @@ footer {
     align-items: none;
     gap: 0.9375rem;
     border-left: .9375rem; }
+  .parrafocontact ul li {
+    font-size: small; }
   /**New Releases**/
   .ps5 {
     display: flex;
@@ -541,6 +574,15 @@ footer {
     justify-content: center;
     align-items: none;
     gap: 0.9375rem; }
+  .giftcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    font-size: small; }
+    .giftcard img {
+      width: 100%; }
   /**Consoles**/
   .consoles2 {
     display: flex;
