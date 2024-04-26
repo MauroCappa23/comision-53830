@@ -1,4 +1,4 @@
-@media (max-width:600px) {
+@media (max-width:576px) {
     /**Generales**/
     .header1 {
         .form {
@@ -16,13 +16,11 @@
 
     .barra{
         @include flex(column, center, none, none);
-        ul{
-            padding-left: 0;
-        }
+        padding-left: 0;
     }
 
     .barra li a{
-        font-size: 1.125rem;
+        font-size: medium;
     }
     footer{
         margin-bottom: 0;
@@ -72,6 +70,9 @@
 
     .section-juegos2 {
         @include flex(column, center, none, none)
+    }
+    .container{
+        padding:0
     }
 
     /**contact**/

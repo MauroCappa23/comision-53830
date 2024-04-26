@@ -53,10 +53,11 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center; }
-  .header-index nav ul, header nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 40px; }
+    .barra{
+      display: flex;
+      flex-direction: row;
+      gap: 2.5rem;
+    }
     .header-index nav ul li, header nav ul li {
       list-style: none; }
       .header-index nav ul li a, header nav ul li a {
@@ -250,10 +251,6 @@ footer {
 footer {
   margin-top: 0; }
 
-/**.main-newreleases{
-    margin-top: 1.25rem;
-    margin-left: .625rem;
-}**/
 .texto {
   width: 100%;
   height: 4.375rem;
@@ -470,7 +467,7 @@ footer {
     width: 100vw;
     row-gap: .9375rem; } }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   /**Generales**/
   .header1 .form {
     display: none; }
@@ -487,7 +484,7 @@ footer {
     .barra ul {
       padding-left: 0; }
   .barra li a {
-    font-size: 1.125rem; }
+    font-size: medium; }
   footer {
     margin-bottom: 0;
     margin-top: 0; }
