@@ -9,16 +9,20 @@
 - GitHub
 - Sass
 - Seo
+- Bootstrap
 
 ## Responsive
-> Aplique full responsive a todas las paginas.
+> Aplique responsive vista tablet y mobile a todas las paginas.
 
 ## Flexbox y Grids
-> Aplique flexbox al header y al footer y en el main utilice grids.
+> se aplico flexbox y grids a los diferentes html y para hacer el responsive.
 
 ## Pseudoclase
 > Se la agregue a la barra de navegacion.
 
+## Servidor
+> El proyecto se subio a Netlify.
+
 ## Nota
-> No agregue bootstrap en esta entrega para que no me modificara nada, en la ultima si pienso agregar algo.
+> En el index cuando hago el responsive mobile en el menu no pude modificar el tamano de la letra, todos los demas html estan bien menos en ese, no se tenga algo que ver que ahi fue donde aplique bootstrap.
 
